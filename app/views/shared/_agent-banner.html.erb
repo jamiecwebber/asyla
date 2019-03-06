@@ -14,9 +14,9 @@
     </div>
   </div>
   <div class="right-controls">
-    <%= link_to(new_client_path) do %>
-      <i class="fas fa-plus-circle"></i>
-    <% end %>
+
+      <i class="fas fa-plus-circle" data-toggle="modal" data-target="#modal-form"></i>
+      <%= render "clients/new"%>
     <div class="search-bar">
       <form class="form-group" method="get" id="search-bar" action="#">
       <input id="search-field" name="query" type="text">
@@ -24,8 +24,12 @@
       </form>
     </div>
     <a href="#"><i id="bell" class="far fa-bell"></i></a>
+    <a href="#"><i id="bell-fill" class="fas fa-bell hidden"></i></a>
     <%= link_to(destroy_user_session_path, method: :delete) do %>
       <i class="fas fa-sign-out-alt"></i>
     <% end %>
   </div>
+
 </div>
+
+
