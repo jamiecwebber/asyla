@@ -3,32 +3,52 @@
   <%= render "shared/client-controller" %>
  <div class="client-container-profile">
 
-<div class="card-client-information-bio">
-      <i class="far fa-meh-blank"></i>
-      <p>Basic Information</p>
-   <div class="card-client-information-bio-basic">
-      <p class="client-profile-name"><u>Name</u>: <em><%= @user.first_name %> <%= @user.last_name %></p>
-      <p class="client-profile-age"><u>Age</u>: <em><%= @user.age %></em></p>
-      <p class="client-profile-nationality"><u>Nationality</u>: <em><%= @user.nationality %></em></p>
-      <p class="client-profile-language"><u>Language:</u> <em><%= @user.language %></em></p>
-      <p class="client-profile-address"><u>Address</u>: <em><%= @user.address %></em></p>
+    <div class="card-client-information">
+      <i class="far fa-user"></i>
+      <h4>Basic Information</h4>
+      <div class="card-client-bio">
+        <div class="card-client-name">
+          <p class="client-profile-name-title space">Name:</p>
+          <p class="client-profile-name-content"><%= @user.first_name %> <%= @user.last_name %></p>
+        </div>
+
+        <div class="client-profile-age">
+          <p class="client-age space">Age:</p>
+          <p class="client-profile-age-content"><%= @user.age %></p>
+        </div>
+
+        <div class="client-profile-nationality">
+          <p class="client-profile-nationality-title space">Nationality: </p>
+          <p class="client-profile-nationality-content"><%= @user.nationality %></p>
+        </div>
+
+        <div class="client-profile-language">
+          <p class="client-profile-language-title space">Language: </p>
+          <p class="client-profile-language-content"><%= @user.language %></p>
+        </div>
+
+        <div class="client-profile-address">
+            <p class="client-profile-address-title space">Address: </p>
+            <p class="client-profile-address-entry"><%= @user.address %></p>
+        </div>
+      </div>
+
+      <div class="card-client-information">
+          <i class="fas fa-camera-retro"></i>
+          <h4>Change Profile Photo</h4>
+      </div>
+
+
+      <div class="card-client-information">
+          <i class="fas fa-home"></i>
+          <h4>Address</h4>
+      </div>
+      <div class="card-client-information">
+          <i class="fas fa-briefcase"></i>
+          <h4>Employment Details</h4>
+      </div>
+      <div class="card-client-information-border"></div>
+
     </div>
-   </div>
-
-  <div class="card-client-information">
-      <i class="fas fa-camera-retro"></i>
-      <p>Change Profile Photo</p>
   </div>
-
-
-  <div class="card-client-information">
-      <i class="fas fa-home"></i>
-      <p>Address</p>
-  </div>
-  <div class="card-client-information">
-      <i class="fas fa-briefcase"></i>
-      <p>Employment Details</p>
-  </div>
-
- </div>
 </div>

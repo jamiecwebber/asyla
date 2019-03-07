@@ -1,69 +1,90 @@
-.client-container-profile {
-    grid-column: 1 / span 12;
-    grid-row: 1 / span 12;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.grid{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+}
 
+.client-container-profile {
+  grid-column: 1 / span 12;
+  grid-row: 2 / span 10;
+  display: flex;
+  flex-direction: column;
 }
 @media(max-width: 960px) {
   .client-container-profile {
     grid-column: 1 / span 12;
-    grid-row: 1 / span 12;
+    grid-row: 2 / span 10;
+
   }
 }
-
-.card-client-information-bio {
- border-bottom: 1px inset rgba(192,192,192,0.5);
-  flex: 0 0 auto;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  width: 100%;
-   i {
-    height: 26px;
-    margin-left: 13px;
-    font-size: 34px;
-    opacity: 0.6;
-  }
-  p {
-    margin: auto 70px;
-    padding-top: 14px;
-    opacity: 0.7;
-    font-size: 16px;
-  }
-}
-
 .card-client-information {
-  border-bottom: 1px inset rgba(192,192,192,0.5);
-  flex: 0 0 auto;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  flex: 0 0 58%;
 
 
-  i {
-    height: 26px;
-    margin-left: 13px;
-    font-size: 34px;
-    opacity: 0.6;
-  }
   p {
-    margin: auto 70px;
-    padding-top: 11px;
-    opacity: 0.7;
-    font-size: 16px;
+    font-weight: lighter;
+    color: #4E4F49;
+    font-family: Roberto;
+    font-size: larger;
+    padding-bottom: 8px;
+  }
+   h4 {
+    font-weight: lighter;
+    color: #4E4F49;
+    font-family: Roberto;
+    font-size: 20px;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+  i {
+    margin: 6px;
+    height: 17px;
   }
 }
-.card-client-information-bio-basic {
-border-top: 1px inset rgba(192,192,192,0.5);
-background-color: rgba(132, 132, 132, 0.1);
-p {
-  font-size: 14px;
-  font-weight: bolder;
-  font-color: black;
+.card-client-bio {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 21px;
+  margin-left: 8px;
+  margin-right: 8px;
+
+  p {
+    font-size: 12px;
+    font-weight: 750;
+    margin-block-end: 1em;
+    line-height: 1.42857;
+    color: #333333;
+    display: flex;
+    width: 94px;
   }
+  div{
+    display: flex;
+    flex-direction: row;
+  }
+  .space{
+    width: 133px;
+  }
+  h4 {
+    font-weight: lighter;
+    color: #4E4F49;
+    font-family: Roberto;
+    font-size: 19px;
+    padding-bottom: 8px;
+    line-height: 1.1;
+  }
+
+}
+
+.card-client-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-client-information-border {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
